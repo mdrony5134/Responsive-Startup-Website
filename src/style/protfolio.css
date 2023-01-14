@@ -1,0 +1,25 @@
+.sectionOne{
+    display: grid;
+    gap: 20px;
+}
+
+.sectionOne-content-text{
+    font-size: var(--sub);
+    font-family: var(--font-2);
+}
+.sectionOne-images{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 25px;
+   
+}
+
+.sectionOne-btn{
+    justify-self: center;
+}
+
+@media (max-width: 568px){
+    .sectionOne-images{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+}

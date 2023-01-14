@@ -1,0 +1,37 @@
+.sectionOne{
+    margin-top: 15px;
+}
+.text{
+    font-size: var(--sub);
+    font-family: var(--font-2);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: var(--sub);
+    font-family: var(--font-2);
+}
+input , textarea{
+    padding: 10px 20px;
+    margin: 8px 0;
+    background-color: #eeeeeeee;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.dark-btn{
+    margin-top: 10px;
+}
+
+@media (max-width: 1024px){
+    .grid{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .sectionTwo-left{
+        order: 1;
+    }
+    .sectionTwo-right{
+        order: 0;
+    }
+}

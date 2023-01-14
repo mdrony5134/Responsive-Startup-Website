@@ -1,0 +1,142 @@
+ /*
+!style rules sectionOne
+*/
+.section-left-text{
+    font-size: var(--body);
+    font-family: var(--font-2);
+    color: var(--color-white-75);
+}
+
+.section-left-btn{
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+ /*
+!style rules sectionTwo
+*/
+
+.sectionTwo{
+    padding: 40px 0;
+    display: grid;
+    gap: 30px;
+}
+.sectionTwo-content-text{
+    font-size: var(--sub);
+    font-family: var(--font-2);
+}
+.sectionTwo-logo{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+}
+.sectionTwo-logo img{
+    justify-self: center;
+    align-self: center;
+}
+.sectionTwo-btn{
+    justify-self: center;
+}
+
+ /*
+!style rules sectionThree
+*/
+.sectionThree-right-text{
+    color: var(--color-dark-50);
+    font-size: var(--body);
+    font-family: var(--font-2);
+}
+.section-right-btn{
+    align-self: flex-start;
+    margin-top: 15px;
+}
+
+ /*
+!style rules sectionFour
+*/
+.sectionFour-left-text{
+    color: var(--color-dark-50);
+    font-size: var(--body);
+    font-family: var(--font-2);   
+}
+
+.sectionFour-left-btn{
+    align-self: flex-start;
+    margin-top: 15px;
+}
+
+ /*
+!style rules sectionFive
+*/
+
+.sectionFive{
+    display: grid;
+    gap: 30px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.sectionFive-content-text{
+    color: var(--color-dark-100);
+    font-family: var(--font-2);
+    font-size: var(--sub);
+}
+
+.sectionFive-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+[class ^= 'sectionFive-card-']{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    padding: 20px 25px;
+}
+[class ^= 'sectionFive-card-'] .name{
+    font-family: var(--font-1);
+    font-size: var(--h5);
+    font-weight: bold;
+}
+[class ^= 'sectionFive-card-'] .position{
+    font-family: var(--font-2);
+    color: var(--color-dark-75);
+    text-transform: uppercase;
+}
+.last-btn{
+    justify-self: center;
+}
+
+/*
+!@media quarry here
+*/
+
+@media (max-width : 1200px){
+    .sectionTwo-logo{
+        grid-template-columns: repeat(3 , 1fr);
+        gap: 40px;
+    }
+} 
+
+@media (max-width : 768px){
+    .sectionOne-right , .sectionFour-left{
+        order: 0;
+    }
+    .sectionOne-left , .sectionFour-left{
+        order: 1;
+    }
+    .sectionFive-cards{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+
+@media (max-width : 568px){
+    .sectionTwo-logo{
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 40px;
+    }
+    .sectionFive-cards{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+} 
